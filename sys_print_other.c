@@ -13,11 +13,11 @@ asmlinkage int sys_print_other(int inputPID)
     /* Check for NULL */
     if (task == NULL)
     {
-    return 0;
+	   return 0;
     }
     
     /* Print information for task */
-  	printk("Process ID: %d\n", task->pid);
+	printk("Process ID: %d\n", task->pid);
 	printk("Running State: %ld\n", task->state);
 	printk("Program Name: %s\n", task->comm);
 	printk("Start Time: %llx\n", task->se.exec_start);
