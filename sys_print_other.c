@@ -13,7 +13,7 @@ asmlinkage int sys_print_other(int inputPID)
     /* Check for NULL */
     if (task == NULL)
     {
-	   return 0;
+	return 0;
     }
     
     /* Print information for task */
