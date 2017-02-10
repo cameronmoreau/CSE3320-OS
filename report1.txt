@@ -1,0 +1,10 @@
+Julian Alanis 1000997137
+Cameron Moreau
+
+We didn't come across many issues with the installation of the kernel. Mostly silly compilation errors because of typos. Implementing print_self was easy when we looked up "current" macro. Once realizing what that did, it was as easy as iterating the pointer until we reach init. Implementing print_other we understood it would be the same code as print_self, except with a user input PID, so instead of grabbing current, we searched the linux kernel for any information as to how to get a arbitrary PID. We found that find_vpid did exactly what we needed. From there it was once again just a matter of printing out the information that was needed.
+
+Enclosed in this zip is the two c files, makefile and the program to test the calls.
+
+NEED TO ALTER TEST_SYSCALL.C to have a valid PID as input, currently it is using the PID of my audio program on my laptop
+
+
