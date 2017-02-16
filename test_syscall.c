@@ -9,9 +9,8 @@
 
 int main(int argc, char * argv[])
 {
-
-  /* This will need to be changed as it is a pid taken from my laptop */
-  int pid = 2106;
+  
+  int pid = atoi(argv[1]);
   
   syscall(__NR_helloworld);
   syscall(__NR_print_self);
